@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  db:
+    build:
+      context: .  # Указываем корневую директорию проекта
+      dockerfile: src/Dockerfile  # Путь к Dockerfile
+    volumes:
+      - ./materials/model.sql:/docker-entrypoint-initdb.d/model.sql
+      - ./src:/home/src
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: mydatabase
+    ports:
+      - "5432:5432"
