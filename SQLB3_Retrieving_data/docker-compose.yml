@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  db:
+    container_name: sql_day3
+    build:
+      context: .
+      dockerfile: src/Dockerfile
+    volumes:
+      - ./materials/model.sql:/docker-entrypoint-initdb.d/model.sql
+      - ./src:/home/src
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: base
+    ports:
+      - "5432:5432"
