@@ -1,9 +1,5 @@
 # SQL Bootcamp
 
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
-
 *Tasks in the SQL Bootcamp* <img src="materials/images/heart_21_x10.gif" alt="drawing" width="20" height="20"/>
 
 ![sql.png](materials/images/sql.png)
@@ -53,5 +49,6 @@
 *   **Database:** PostgreSQL 14+
 *   **Tools:** Docker, Docker Compose, pgAdmin / DBeaver
 *   **Concepts:** ACID, Normalization, Indexing, OLAP, Recursive Queries
+
 
 --- 
