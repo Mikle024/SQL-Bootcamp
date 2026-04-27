@@ -4,10 +4,11 @@ services:
   db:
     container_name: sql_day12
     build:
-      context: .  # Указываем корневую директорию проекта
-      dockerfile: src/Dockerfile  # Путь к Dockerfile
+      context: .
+      dockerfile: src/Dockerfile
     volumes:
       - ./materials/rush01_model.sql:/docker-entrypoint-initdb.d/00_rush01_model.sql
+      - ./src:/home/src
     environment:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: pass
