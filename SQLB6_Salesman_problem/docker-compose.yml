@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: src/Dockerfile
     volumes:
-      - ./src/ex00/0.sql:/docker-entrypoint-initdb.d/model.sql
+      - ./src/ex00/team00_ex00.sql:/docker-entrypoint-initdb.d/team00_ex00.sql
       - ./src:/home/src
     environment:
       POSTGRES_USER: user
