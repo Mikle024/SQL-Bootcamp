@@ -4,8 +4,8 @@ services:
   db:
     container_name: sql_day6
     build:
-      context: .  # Указываем корневую директорию проекта
-      dockerfile: src/Dockerfile  # Путь к Dockerfile
+      context: .
+      dockerfile: src/Dockerfile
     volumes:
       - ./src/ex00/0.sql:/docker-entrypoint-initdb.d/model.sql
       - ./src:/home/src
