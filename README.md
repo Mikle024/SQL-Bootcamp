@@ -10,18 +10,18 @@
 
 | Day | Topic | Key Skills                                                                                                     |
 |:---:|:---|:---------------------------------------------------------------------------------------------------------------|
-| **00** | `SQLB1_beginner-1` | Basic SQL, Relational Model, Sets [подробнее](SQLB1_beginner-1/README.md)                                      |
-| **01** | `SQLB2_beginner-2` | JOINs, UNIONs, Data Aggregation [подробнее](SQLB2_beginner-2/README.md)                                        |
-| **02** | `SQLB3_Retrieving_data` | Subqueries, CTE, Data Filtering [подробнее](SQLB3_Retrieving_data/README.md)                               |
-| **03** | `SQLB4_DML` | INSERT, UPDATE, DELETE, MERGE, Data Manipulation [подробнее](SQLB4_DML/README.md)                              |
-| **04** | `SQLB5_Snapshots` | Database Views, Materialized Views, Virtual Tables  [подробнее](SQLB5_Snapshots/README.md)                     |
-| **05** | `SQLB6_Salesman_problem` | **Recursive CTE**, Traveling Salesman Problem (TSP)   [подробнее](SQLB6_Salesman_problem/README.md)            |
-| **06** | `SQLB7_Database_index` | B-Tree Indexes, Optimization, Query Planning (`EXPLAIN ANALYZE`)   [подробнее](SQLB7_Database_index/README.md) |
-| **07** | `SQLB8_Integrating_features` | Constraints, Keys, Database Design  [подробнее](SQLB8_Integrating_features/README.md)                          |
-| **08** | `SQLB9_OLAP` | **Window Functions**, Analytical Queries, Ranking     [подробнее](SQLB9_OLAP/README.md)                        |
-| **09** | `SQLB10_Isolation_levels` | **ACID**, Transaction Isolation Levels, Deadlocks  [подробнее](SQLB10_Isolation_levels/README.md)              |
-| **10** | `SQLB11_Functions_and_procs` | PL/pgSQL, Stored Procedures, Functions, Triggers  [подробнее](SQLB11_Functions_and_procs/README.md)            |
-| **11** | `SQLB12_Warehouse_fundamentals` | JOIN Algorithms, Optimization, Tablespaces   [подробнее](SQLB12_Warehouse_fundamentals/README.md)              |
+| **00** | `SQLB1_beginner-1` | Basic SQL, Relational Model, Sets [подробнее](SQLB1_beginner-1/)                                      |
+| **01** | `SQLB2_beginner-2` | JOINs, UNIONs, Data Aggregation [подробнее](SQLB2_beginner-2/)                                        |
+| **02** | `SQLB3_Retrieving_data` | Subqueries, CTE, Data Filtering [подробнее](SQLB3_Retrieving_data/)                               |
+| **03** | `SQLB4_DML` | INSERT, UPDATE, DELETE, MERGE, Data Manipulation [подробнее](SQLB4_DML/)                              |
+| **04** | `SQLB5_Snapshots` | Database Views, Materialized Views, Virtual Tables  [подробнее](SQLB5_Snapshots/)                     |
+| **05** | `SQLB6_Salesman_problem` | **Recursive CTE**, Traveling Salesman Problem (TSP)   [подробнее](SQLB6_Salesman_problem/)            |
+| **06** | `SQLB7_Database_index` | B-Tree Indexes, Optimization, Query Planning (`EXPLAIN ANALYZE`)   [подробнее](SQLB7_Database_index/) |
+| **07** | `SQLB8_Integrating_features` | Constraints, Keys, Database Design  [подробнее](SQLB8_Integrating_features/)                          |
+| **08** | `SQLB9_OLAP` | **Window Functions**, Analytical Queries, Ranking     [подробнее](SQLB9_OLAP/)                        |
+| **09** | `SQLB10_Isolation_levels` | **ACID**, Transaction Isolation Levels, Deadlocks  [подробнее](SQLB10_Isolation_levels/)              |
+| **10** | `SQLB11_Functions_and_procs` | PL/pgSQL, Stored Procedures, Functions, Triggers  [подробнее](SQLB11_Functions_and_procs/)            |
+| **11** | `SQLB12_Warehouse_fundamentals` | JOIN Algorithms, Optimization, Tablespaces   [подробнее](SQLB12_Warehouse_fundamentals/)              |
 
 ---
 
