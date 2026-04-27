@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  db:
+    container_name: sql_day12
+    build:
+      context: .  # Указываем корневую директорию проекта
+      dockerfile: src/Dockerfile  # Путь к Dockerfile
+    volumes:
+      - ./materials/rush01_model.sql:/docker-entrypoint-initdb.d/00_rush01_model.sql
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: base
+    ports:
+      - "5432:5432"

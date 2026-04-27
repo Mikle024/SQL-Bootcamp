@@ -1,0 +1,29 @@
+services:
+  db:
+    container_name: sql_day4
+    build:
+      context: .
+      dockerfile: src/Dockerfile
+    volumes:
+      - ./materials/model.sql:/docker-entrypoint-initdb.d/model.sql
+      - ./src:/home/src
+      - ./src/ex00/day03_ex00.sql:/docker-entrypoint-initdb.d/01_day03_ex00.sql
+      - ./src/ex01/day03_ex01.sql:/docker-entrypoint-initdb.d/02_day03_ex01.sql
+      - ./src/ex02/day03_ex02.sql:/docker-entrypoint-initdb.d/03_day03_ex02.sql
+      - ./src/ex03/day03_ex03.sql:/docker-entrypoint-initdb.d/04_day03_ex03.sql
+      - ./src/ex04/day03_ex04.sql:/docker-entrypoint-initdb.d/05_day03_ex04.sql
+      - ./src/ex05/day03_ex05.sql:/docker-entrypoint-initdb.d/06_day03_ex05.sql
+      - ./src/ex06/day03_ex06.sql:/docker-entrypoint-initdb.d/07_day03_ex06.sql
+      - ./src/ex07/day03_ex07.sql:/docker-entrypoint-initdb.d/08_day03_ex07.sql
+      - ./src/ex08/day03_ex08.sql:/docker-entrypoint-initdb.d/09_day03_ex08.sql
+      - ./src/ex09/day03_ex09.sql:/docker-entrypoint-initdb.d/10_day03_ex09.sql
+      - ./src/ex10/day03_ex10.sql:/docker-entrypoint-initdb.d/11_day03_ex10.sql
+      - ./src/ex11/day03_ex11.sql:/docker-entrypoint-initdb.d/12_day03_ex11.sql
+      - ./src/ex12/day03_ex12.sql:/docker-entrypoint-initdb.d/13_day03_ex12.sql
+      - ./src/ex13/day03_ex13.sql:/docker-entrypoint-initdb.d/14_day03_ex13.sql
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: base
+    ports:
+      - "5432:5432"

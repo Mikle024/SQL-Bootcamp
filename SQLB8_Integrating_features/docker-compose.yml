@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  db:
+    container_name: sql_day8
+    build:
+      context: .  # Указываем корневую директорию проекта
+      dockerfile: src/Dockerfile  # Путь к Dockerfile
+    volumes:
+      - ./materials/model.sql:/docker-entrypoint-initdb.d/00_model.sql
+      - ../SQLB4_DML/src/ex00/day03_ex00.sql:/docker-entrypoint-initdb.d/01_day03_ex00.sql
+      - ../SQLB4_DML/src/ex01/day03_ex01.sql:/docker-entrypoint-initdb.d/02_day03_ex01.sql
+      - ../SQLB4_DML/src/ex02/day03_ex02.sql:/docker-entrypoint-initdb.d/03_day03_ex02.sql
+      - ../SQLB4_DML/src/ex03/day03_ex03.sql:/docker-entrypoint-initdb.d/04_day03_ex03.sql
+      - ../SQLB4_DML/src/ex04/day03_ex04.sql:/docker-entrypoint-initdb.d/05_day03_ex04.sql
+      - ../SQLB4_DML/src/ex05/day03_ex05.sql:/docker-entrypoint-initdb.d/06_day03_ex05.sql
+      - ../SQLB4_DML/src/ex06/day03_ex06.sql:/docker-entrypoint-initdb.d/07_day03_ex06.sql
+      - ../SQLB4_DML/src/ex07/day03_ex07.sql:/docker-entrypoint-initdb.d/08_day03_ex07.sql
+      - ../SQLB4_DML/src/ex08/day03_ex08.sql:/docker-entrypoint-initdb.d/09_day03_ex08.sql
+      - ../SQLB4_DML/src/ex09/day03_ex09.sql:/docker-entrypoint-initdb.d/10_day03_ex09.sql
+      - ../SQLB4_DML/src/ex10/day03_ex10.sql:/docker-entrypoint-initdb.d/11_day03_ex10.sql
+      - ../SQLB4_DML/src/ex11/day03_ex11.sql:/docker-entrypoint-initdb.d/12_day03_ex11.sql
+      - ../SQLB4_DML/src/ex12/day03_ex12.sql:/docker-entrypoint-initdb.d/13_day03_ex12.sql
+      - ../SQLB4_DML/src/ex13/day03_ex13.sql:/docker-entrypoint-initdb.d/14_day03_ex13.sql
+      - ../SQLB5_Snapshots/src/ex00/day04_ex00.sql:/docker-entrypoint-initdb.d/15_day04_ex00.sql
+      - ../SQLB5_Snapshots/src/ex01/day04_ex01.sql:/docker-entrypoint-initdb.d/16_day04_ex01.sql
+      - ../SQLB5_Snapshots/src/ex02/day04_ex02.sql:/docker-entrypoint-initdb.d/17_day04_ex02.sql
+      - ../SQLB5_Snapshots/src/ex03/day04_ex03.sql:/docker-entrypoint-initdb.d/18_day04_ex03.sql
+      - ../SQLB5_Snapshots/src/ex04/day04_ex04.sql:/docker-entrypoint-initdb.d/19_day04_ex04.sql
+      - ../SQLB5_Snapshots/src/ex05/day04_ex05.sql:/docker-entrypoint-initdb.d/20_day04_ex05.sql
+      - ../SQLB5_Snapshots/src/ex06/day04_ex06.sql:/docker-entrypoint-initdb.d/21_day04_ex06.sql
+      - ../SQLB5_Snapshots/src/ex07/day04_ex07.sql:/docker-entrypoint-initdb.d/22_day04_ex07.sql
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: base
+    ports:
+      - "5432:5432"
